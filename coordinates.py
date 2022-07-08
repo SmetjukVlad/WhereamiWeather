@@ -8,7 +8,7 @@ class Coordinates(NamedTuple):
     latitude: float
     longitude: float
 
-def get_coordinates() -> Coordinates:
+def get_gps_coordinates() -> Coordinates:
     """Returns current coordinates using MacBook GPS"""
     coordinates = _get_whereami_coordinates()
     return _round_coordinates(coordinates)
